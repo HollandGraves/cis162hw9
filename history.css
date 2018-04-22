@@ -1,0 +1,118 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 1
+
+   History Style Sheet
+      Author: Zachary Ledoux
+      Date:   04/19/2018
+
+   Filename:         history.css
+   Supporting Files: 
+
+*/
+
+
+
+/* Body styles
+-------------------------------*/
+
+body {
+    min-width: 1000px;
+}
+
+body * {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Header styles
+-------------------------------*/
+
+header {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    width: 55em;
+}
+
+header img {
+    height: 4em;
+}
+
+
+/* Nav styles
+-------------------------------*/
+
+nav {
+    float: left;
+    width: 15em;
+    background-color: rgb(51, 51, 51);
+}
+
+nav li {
+    list-style: none;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 0.7em;
+    line-height: 1.4em;
+    margin-left: 1em;
+    margin-bottom: 1.2em;
+}
+
+nav li a {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+
+/* Section styles
+-------------------------------*/
+
+#speech {
+    background-color: rgb(212, 212, 212);
+    width: 40em;
+    float: left;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+#speech h1 {
+    background-color: rgb(51, 51, 51);
+    color: rgb(212, 212, 212);
+    font-size: 2em;
+    text-align: center;
+}
+
+#speech p {
+    font-size: 0.9em;
+    margin: 1em;
+}
+
+#speech > p:first-of-type::first-letter {
+    float: left;
+    clear: left;
+    font-size: 4em;
+    line-height: 0.8em;
+    margin-right: 0.03em;
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+    border-width: 0.02em;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: black;
+    border-bottom-color: black;
+}
+
+#speech > p:first-of-type::first-line {
+    text-transform: uppercase;
+}
+
+#speech img {
+    float: right;
+    clear: right;
+    display: block;
+    height: 4em;
+}
